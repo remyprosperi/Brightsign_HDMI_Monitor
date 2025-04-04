@@ -1,4 +1,4 @@
-#HDMI Monitor
+# HDMI Monitor
 
 Brightscript permettant de récupérer via le DiagnosticLog le statut HDMI.  
 Plusieurs cas de figures :  
