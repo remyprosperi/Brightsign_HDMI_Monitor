@@ -78,10 +78,10 @@ Function HdmiCheck(s as Object)
                         printinfo(s, year)
                     end if
                 else 
-                    print "Ecran OFF"
+                    printinfo(s,"Ecran OFF")
                 end if
             else
-                print "HDMI Non OK"
+                printinfo(s,"HDMI Non OK")
             end if
         end if
     end if
