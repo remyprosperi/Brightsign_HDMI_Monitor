@@ -40,7 +40,7 @@ Function HdmiCheck(s as Object)
         status = vm.GetHdmiOutputStatus()
         if status = invalid then
             if s.last_hdmi_status = true or s.last_hdmi_status = invalid then 
-                printinfo(s,"HDMI non connecte")
+                printinfo(s,"HDMI deconnecte")
                 s.last_hdmi_status = false
                 goto end_hdmi
             end if
@@ -51,7 +51,7 @@ Function HdmiCheck(s as Object)
                 s.last_hdmi_status = current_hdmi_status
                 s.last_power_status = current_power_status
                 if current_hdmi_status then
-                    printinfo(s,"HDMI OK")
+                    printinfo(s,"HDMI connecte")
                     if status.output_powered then
                         printinfo(s,"Ecran ON")
                         edid_screen = vm.GetEdidIdentity(true)
@@ -91,8 +91,6 @@ Function HdmiCheck(s as Object)
                     else 
                         printinfo(s,"Ecran OFF")
                     end if
-                else
-                    printinfo(s,"HDMI Non OK")
                 end if
             end if
         end if
