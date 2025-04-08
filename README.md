@@ -5,3 +5,5 @@ Plusieurs cas de figures :
 1) HDMI est connecte, et l'écran est ON, alors si disponible on recupere l'EDID (Fabriquant, Modele, Année...).    
 2) HDMI est connecte, mais l'écran est OFF.  
 3) HDMI est deconnecte.
+
+Note: Attention, ne permets pas de savoir si l'écran est sur la bonne source HDMI1, HDMI2...
